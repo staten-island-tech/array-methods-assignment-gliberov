@@ -86,6 +86,7 @@ cities.forEach((cities)=>{
     console.log('Population Rank',cities.id);
     console.log('Name:',cities.name);
     console.log('Estimated Population:',cities.estimatedPopulation);
+    console.log('Is in Asia:', cities.inAsia)
     console.log('Other Cities of Same Country:',cities.otherCities);
     cities.otherCities.forEach((poop)=>{
         console.log(poop);
