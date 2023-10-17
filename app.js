@@ -63,7 +63,7 @@ const cities = [
         inAsia: true,
         otherCities: ['Guangzhou','Shengzhen','Chengdu']
     },
-    {
+    { 
         id:9,
         name: "Dhaka",
         country: 'Bangladesh',
@@ -84,8 +84,9 @@ const cities = [
 
 cities.forEach((cities)=>{
     console.log('Population Rank',cities.id);
-    console.log(cities.name);
-    console.log(cities.otherCities);
+    console.log('Name:',cities.name);
+    console.log('Estimated Population:',cities.estimatedPopulation);
+    console.log('Other Cities of Same Country:',cities.otherCities);
     cities.otherCities.forEach((poop)=>{
         console.log(poop);
     })
