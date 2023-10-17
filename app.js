@@ -83,15 +83,16 @@ const cities = [
 ]
 
 cities.forEach((cities)=>{
+    console.log('-----------------------');
     console.log('Population Rank',cities.id);
     console.log('Name:',cities.name);
     console.log('Estimated Population:',cities.estimatedPopulation);
-    console.log('Is in Asia:', cities.inAsia)
+    console.log('Is in Asia:', cities.inAsia);
     cities.otherCities.forEach((poop)=>{
         console.log(poop);
     })
 
 });
-
+console.log('-----------------------');
 const asianCities = cities.filter((stinky)=> {return stinky.inAsia === true})
 console.log('Asian cities',asianCities);
